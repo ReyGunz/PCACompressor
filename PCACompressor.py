@@ -18,6 +18,6 @@ class PCACompressor:
         return self.pca.transform(data)
         
     def fit_transform(self, data, thresh=0.999):
-    	self.fit(data)
+        self.fit(data, thresh)
         return self.transform(data)
 
